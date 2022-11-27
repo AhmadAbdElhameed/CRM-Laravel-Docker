@@ -58,6 +58,7 @@ services:
       - PMA_HOST=mysql
     networks:
       - service-network
+      
   redis:
     image: redis:4.0-alpine
     command: redis-server --appendonly yes
