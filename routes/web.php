@@ -20,6 +20,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/index',[App\Http\Controllers\UsersController::class,'index']);
+Route::get('/add',[App\Http\Controllers\UsersController::class,'add']);
+Route::get('/list',[App\Http\Controllers\UsersController::class,'list']);
+Route::get('/update',[App\Http\Controllers\UsersController::class,'update']);
+Route::get('/find/{id}',[App\Http\Controllers\UsersController::class,'find']);
+Route::get('/delete/{id}',[App\Http\Controllers\UsersController::class,'delete']);
+Route::get('/check/{name}',[App\Http\Controllers\UsersController::class,'check']);
 
 Route::get('/hello', function () {
     return "Hello Page";
