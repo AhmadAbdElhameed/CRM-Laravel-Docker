@@ -20,11 +20,13 @@ class UsersController extends Controller
 
     public function add(Request $request){
         $user = new User();
-        $user->name = "kareem";
+        $user->name = "nour";
         $user->password = "9652413";
-        $user->email = 'kareem@gmail.com';
+        $user->email = 'nour@yahoo.com';
 
         $user->save();
+
+        echo "used added";
     }
 
     public function update(Request $request){
