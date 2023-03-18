@@ -44,7 +44,7 @@ services:
       - "MYSQL_USER=tielearn"
       - "MYSQL_PASSWORD=tielearn"
     ports:
-        - "3306:3306"
+        - "3307:3306"
     networks:
       - service-network
 
@@ -58,7 +58,7 @@ services:
       - PMA_HOST=mysql
     networks:
       - service-network
-      
+
   redis:
     image: redis:4.0-alpine
     command: redis-server --appendonly yes
